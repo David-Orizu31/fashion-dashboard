@@ -39,10 +39,6 @@
     padding-left: 50px;
   }
 
-  .footer {
-    left: 50px;
-}
-
 }
 
 @media (max-width:767px) {
@@ -58,9 +54,6 @@
     padding-left: 0px;
   }
 
-  .footer {
-    left: 0px;
-}
 }
 
 @media (max-width:480px) {

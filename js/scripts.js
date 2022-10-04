@@ -7,7 +7,7 @@ $('.btn-nav').click(function() {
     $('.dash-header').css('padding-left', '50px');
     $('.side-nav').css('width', '50px');
     $('.main-content').css('padding-left', '50px');
-    $('.footer').css('left', '50');
+    // $('.footer').css('left', '50');
     $('.list-text').addClass('d-none');
     $('.profpic-area p').addClass('d-none');
     $('.logo-link').addClass('d-none');
@@ -17,7 +17,7 @@ $('.btn-nav').click(function() {
     $('.dash-header').css('padding-left', '250px');
     $('.side-nav').css('width', '250px');
     $('.main-content').css('padding-left', '250px');
-    $('.footer').css('left', '250');
+    // $('.footer').css('left', '250');
     setTimeout(() => {
         $('.list-text').removeClass('d-none');
         $('.profpic-area p').removeClass('d-none');
