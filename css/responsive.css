@@ -1,0 +1,70 @@
+@media (max-width:992px) {
+  
+    .btn-nav.arrow .line-1 {
+        width: 13px;
+        margin-bottom: 2px;
+        margin-left: 0px;
+        transform: rotate(-35deg);
+        background:white;
+        transition: 0.5s all ease-in-out;
+    }
+    
+    .btn-nav.arrow .line-2 {
+        width: 26px;
+        margin-bottom: 2px;
+        background:white;
+        transition: 0.5s all ease-in-out;
+    }
+    
+    .btn-nav.arrow .line-3 {
+        width: 13px;
+        transform: rotate(35deg);
+        margin-bottom: 2px;
+        margin-left: 0px;
+        background:white;
+        transition: 0.5s all ease-in-out;
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width:921px) {
+  .dash-header {
+    padding-left: 50px;
+  }
+
+  .side-nav {
+    width: 50px;
+  }
+
+  .main-content {
+    padding-left: 50px;
+  }
+
+  .footer {
+    left: 50px;
+}
+
+}
+
+@media (max-width:767px) {
+  .dash-header {
+    padding-left: 0px;
+  }
+
+  .side-nav {
+    width: 0px;
+  }
+
+  .main-content {
+    padding-left: 0px;
+  }
+
+  .footer {
+    left: 0px;
+}
+}
+
+@media (max-width:480px) {
+  #loader {
+    left: 55%;
+  }
+}

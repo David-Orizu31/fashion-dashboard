@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background: #ffffff;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-oxygen {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.text-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+.text-red {
+    color: rgb(212, 47, 47);
+}
+
+.text-grey {
+    color: rgb(100, 99, 99);
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.stat-back {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.dash-header {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 55px;
+    padding-left: 250px;
+    background: white;
+    transition: 0.5s all ease-in-out;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    max-height: 100%;
+    overflow-x: visible;
+    overflow-y: auto;
+    background: rgb(36, 34, 34);
+    z-index: 9999;
+    transition: 0.5s all ease-in-out;
+}
+
+.side-nav .logo-area {
+    min-height: 55px;
+    background-color: rgb(212, 47, 47);
+    padding-top: 14px;
+}
+
+.side-nav .logo-area .logo-link {
+    text-decoration: none;
+}
+
+.side-nav .profpic-area {
+    background: linear-gradient(rgba(180, 71, 71, 0.836),rgba(151, 48, 48, 0.836)), url(../img/boutique-g3b00dc299_1920.jpg) no-repeat center;
+    min-height: 120px;
+    background-size: cover;
+}
+
+.side-nav .profpic-area .img-profile {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.side-nav .profpic-area .img-profile.cropped {
+    width: 35px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.side-nav .nav-list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.side-nav .nav-list .list-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.side-nav .nav-list .list-item a .list-icon {
+   font-size: 20px;
+   padding-right: 10px;
+   padding-left: 5px;
+}
+
+/* .side-nav .nav-list .list-item{
+    position: relative !important;
+    overflow-x: visible;
+}
+
+.side-nav .nav-list .list-item .hover-item:hover {
+    width: 250px;
+}
+
+.side-nav .nav-list .list-item .hover-item:hover .list-text {
+    display: inline-block !important;
+    background: rgb(212, 47, 47);
+    color: white;
+} */
+
+.side-nav .nav-list .list-item a .list-text {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    transition: 0.5s all ease-in-out;
+}
+
+.side-nav .nav-list .list-item a:hover {
+    background: rgb(189, 57, 57);
+    color: white;
+}
+
+.side-nav .nav-list .list-item.active a {
+    background: rgb(189, 57, 57);
+    color: white;
+}
+
+.main-content {
+    padding-left: 250px;
+    transition: 0.5s all ease-in-out;
+}
+
+.btn-nav {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.btn-nav .line-1 {
+    width: 26px;
+    height: 2px;
+    background: rgb(66, 66, 66);
+    margin-bottom: 4px;
+}
+
+.btn-nav .line-2 {
+    width: 22px;
+    height: 2px;
+    background: rgb(66, 66, 66);
+    margin-bottom: 4px;
+    transition: 0.3s all ease-in-out;
+}
+
+.btn-nav .line-3 {
+    width: 18px;
+    height: 2px;
+    background: rgb(66, 66, 66);
+    margin-bottom: 4px;
+    transition: 0.5s all ease-in-out;
+}
+
+.btn-nav:hover .line-2 {
+    width: 26px;
+}
+
+.btn-nav:hover .line-3 {
+    width: 26px;
+}
+
+.btn-nav.arrow .line-1 {
+    width: 13px;
+    margin-bottom: 2px;
+    margin-left: 15px;
+    transform: rotate(35deg);
+    transition: 0.5s all ease-in-out;
+}
+
+.btn-nav.arrow .line-2 {
+    width: 26px;
+    margin-bottom: 2px;
+    transition: 0.5s all ease-in-out;
+}
+
+.btn-nav.arrow .line-3 {
+    width: 13px;
+    transform: rotate(-35deg);
+    margin-bottom: 2px;
+    margin-left: 15px;
+    transition: 0.5s all ease-in-out;
+}
+
+/* .btn-nav.abs {
+    position: absolute;
+    top: 0;
+    left: 250px;
+} */
+
+.nav-drop {
+    margin-top: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    position: relative;
+}
+
+.nav-drop:hover {
+    color: rgb(212, 47, 47);
+}
+
+.img-profnav {
+    width: 30px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.nav-drop .not-bell {
+    font-size: 20px;
+}
+
+.nav-drop .not-badge {
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 8px;
+    margin-top: -3px;
+}
+
+.prof-menu {
+    margin-right: 60px !important;
+}
+
+.dash-bread {
+    font-size: 13px;
+}
+
+.dash-bread a {
+    color: rgb(212, 47, 47) !important;
+    text-decoration: none;
+}
+
+.dash-container {
+    max-width: 1350px !important;
+}
+
+.dash-card {
+    border: none !important;
+    background: rgb(233, 68, 68) !important;
+}
+
+.table-card {
+    border: none !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.page-item.active .page-link {
+    color: white;
+    background: rgb(212, 47, 47);
+    border: 1px solid rgb(212, 47, 47);
+}
+
+.page-item .page-link {
+    color: rgb(212, 47, 47);
+    background: white;
+    border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+    color: rgb(212, 47, 47);
+}
+
+.table-card table {
+    font-size: 15px;
+}
+
+.dash-actions .btn-add {
+    color: white;
+    background: rgb(40, 139, 40);
+    border: 1px solid rgb(40, 139, 40);
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.dash-actions .btn-add:hover {
+    color: rgb(40, 139, 40);
+    border: 1px solid rgb(40, 139, 40);
+}
+
+.dash-actions .btn-add:focus {
+    color: rgb(40, 139, 40);
+    border: 1px solid rgb(40, 139, 40);
+}
+
+.dash-actions .btn-bulkdel {
+    color: white;
+    background: rgb(212, 47, 47);
+    border: 1px solid rgb(212, 47, 47);
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.dash-actions .btn-bulkdel:hover {
+    color: rgb(212, 47, 47);
+    border: 1px solid rgb(212, 47, 47);
+}
+
+.dash-actions .btn-bulkdel:focus {
+    color: rgb(212, 47, 47);
+    border: 1px solid rgb(212, 47, 47);
+}
+
+.designby {
+    font-size: 13px;
+}
+
+.designby a{
+    color: rgb(212, 47, 47) !important;
+    text-decoration: none;
+}
+
+.dash-group .dash-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dash-group .dash-control {
+    border-radius: 0px;
+    font-size: 15px;
+}
+
+.dash-group .dash-control:focus {
+    color: rgb(212, 47, 47);
+    border: 1px solid rgb(212, 47, 47);
+    box-shadow: none;
+}
+
+.btn-submit {
+    color: white !important;
+    background: rgb(212, 47, 47) !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    border-radius: 0px !important;
+}
+
+.btn-submit:hover {
+    opacity: 0.8;
+}
+
+.tab-link.active {
+    background: rgb(212, 47, 47) !important;
+    color: white !important;
+}
+
+.tab-link {
+    color: rgb(212, 47, 47) !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 250;
+    height: 40px;
+    max-width: 100%;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}

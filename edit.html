@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - Edit Products</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="line-awesome/css/line-awesome.css">
+    <link rel="stylesheet" href="line-awesome/css/line-awesome.min.css">
+    <!-- Font Awesome -->
+    <script src="js/font-awesome.js"></script>
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
+    <!-- Izi Toast CSS -->
+    <link rel="stylesheet" href="css/iziToast.min.css">
+</head>
+<body>
+
+   <div class="se-pre-con">
+      <div id="loader">
+         <img src="img/dash-preload.gif" alt="dash-preloader" width="100%">
+      </div>
+    </div>
+
+   <div class="dark-body"></div>
+
+    <header class="dash-header fixed-top">
+      
+      <div class="row">
+
+      <div class="col">
+        <ul class="btn-nav border-0">
+         <li class="line-1"></li>
+         <li class="line-2"></li>
+         <li class="line-3"></li>
+        </ul>
+      </div>
+
+      <div class="col not-drop text-end">
+        
+           <div class="dropdown open d-inline">
+            <a class="nav-drop" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                     <span class="la la-bell-o not-bell"></span>
+                     <span class="badge bg-danger not-badge">0</span>
+                  </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="triggerId">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item disabled" href="#">Disabled action</a>
+            </div>
+           </div>
+
+           <div class="dropdown open d-inline">
+            <a class="dropdown-toggle nav-drop" type="button" id="triggerId2" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <img src="img/user.png" alt="user" class="img-profnav">
+                  </a>
+            <div class="dropdown-menu dropdown-menu-end prof-menu" aria-labelledby="triggerId2">
+               <a class="dropdown-item" href="#">Here</a>
+               <a class="dropdown-item disabled" href="#">Disabled action</a>
+            </div>
+           </div>
+
+           </div>
+
+         </div>
+
+    </header>
+
+    <aside class="side-nav">
+       <div class="logo-area text-center">
+         <a href="index.html" class="logo-link">
+          <h4 class="text-white text-uppercase text-raleway">Fashion</h4>
+         </a>
+       </div>
+
+       <div class="profpic-area pt-4">
+          <div class="text-center">
+            <img src="img/user.png" alt="user" class="img-profile">
+            <p class="text-uppercase text-white text-rubik mt-1 font-400">Username</p>
+          </div>
+       </div>
+
+       <ul class="nav-list mt-3">
+          <li class="list-item">
+            <a href="index.html" class="d-block p-2">
+             <div class="d-inline list-icon">
+                <span class="la la-dashboard"></span>
+             </div>
+             <span class="list-text">Dashboard</span>
+             </a>
+          </li>
+
+          <li class="list-item active">
+            <a href="products.html" class="d-block p-2">
+             <div class="d-inline list-icon">
+                <span class="la la-product-hunt"></span>
+             </div>
+              <span class="list-text">Products</span>
+             </a>
+          </li>
+
+          <li class="list-item">
+            <a href="" class="d-block p-2">
+             <div class="d-inline list-icon">
+                <span class="las la-list"></span>
+             </div>
+              <span class="list-text">Orders</span>
+             </a>
+          </li>
+
+          <li class="list-item">
+            <a href="" class="d-block p-2">
+             <div class="d-inline list-icon">
+                <span class="la la-users"></span>
+             </div>
+             <span class="list-text">Customers</span>
+             </a>
+          </li>
+
+          <li class="list-item">
+            <a href="profile.html" class="d-block p-2">
+             <div class="d-inline list-icon">
+                <span class="la la-user-alt"></span>
+             </div>
+             <span class="list-text">Profile</span>
+             </a>
+          </li>
+       </ul>
+
+    </aside>
+
+    <main class="main-content">
+
+      <div class="container dash-container mt-5 pt-4">
+        <div class="container dash-container">
+         <div class="dash-title">
+         <h3 class="text-rubik">Edit Product</h3>
+         <h6 class="text-oxygen dash-bread font-500"><a href="#">Dashboard</a>  <span class="las la-arrow-right text-red"></span> <a href="#">Products</a> <span class="las la-arrow-right"></span> Edit</h6>
+        </div>
+
+        <div class="dash-body mt-4">
+           <div class="card table-card p-3 mb-2">
+            <form action="" method="post">
+
+              <div class="form-group dash-group mb-2">
+                <label for="product_name" class="form-label dash-label">Product Name</label>
+                <input type="text" name="product_name" id="product_name" class="form-control dash-control" placeholder="Product Name">
+              </div>
+
+              <div class="form-group dash-group mb-2">
+                <label for="image" class="form-label dash-label">Image</label>
+                <input type="file" name="image" id="image" class="form-control dash-control">
+              </div>
+
+              <div class="form-group dash-group mb-2">
+                <label for="images" class="form-label dash-label">Images</label>
+                <input type="file" name="images" id="images" class="form-control dash-control" multiple>
+              </div>
+
+              <div class="form-group dash-group mb-3">
+                <label for="product_price" class="form-label dash-label">Product Price</label>
+                <input type="text" name="product_price" id="product_price" class="form-control dash-control" placeholder="Product Price">
+              </div>
+
+              <div class="form-group dash-group mb-2">
+                <button type="submit" class="btn btn-submit px-3">Save</button>
+              </div>
+
+            </form>
+
+           </div>
+        </div>
+          
+        </div>
+
+      </div>
+
+    </main>
+
+    <br><br><br>
+    <footer class="footer">
+        <div class="container dash-container position-relative">
+          <div class="text-md-end text-center text-grey designby">Designed with <span class="la la-heart-o text-red"></span> by <a href="#un">Digital Roah Services.</a></div>
+        </div>
+     </footer>
+     
+    
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Jquery -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <!-- Datatable JS -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#example').DataTable();
+      });
+    </script>
+        <!-- Izi Toast JS -->
+        <script src="js/iziToast.min.js"></script>
+    <!-- Preloder JS -->
+    <script src="js/modernizr.js"></script>
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
+<script>
+    "use strict";
+        function notify(status,message) {
+           iziToast[status]({
+             message: message,
+             position: "topRight"
+           });
+        }
+</script>
+</body>
+</html>
