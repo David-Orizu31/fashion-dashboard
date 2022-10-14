@@ -463,6 +463,10 @@ html,body {
       border-right: 1px solid white;
   }
 
+  .mobile-nav .nav-content.end {
+    border-right: none;
+}
+
   .mobile-nav .nav-content select {
     background-color: transparent;
     color: white;
