@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagement - Edit Products</title>
+    <title>Nagement - Dashboard</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -134,15 +134,15 @@
         </li>
 
         <li class="list-item dropdown">
-          <a href="javascript:void(0);" class="d-block p-2 list-drop active" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+          <a href="javascript:void(0);" class="d-block p-2 list-drop" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
            <div class="d-inline list-icon">
               <span class="la la-bell-o"></span>
            </div>
-           <span class="list-text">Subscriptions <span class="float-end las la-angle-up drop-icon"></span></span>
+           <span class="list-text">Subscriptions <span class="float-end las la-angle-down drop-icon"></span></span>
            </a> 
 
-           <div class="dropdown-menu dropdown-content show" aria-labelledby="triggerId">
+           <div class="dropdown-menu dropdown-content" aria-labelledby="triggerId">
              <a class="dropdown-item" href="sms.html"><span class="las la-comment-alt px-2"></span> Renew/Buy Sms</a>
              <a class="dropdown-item" href="plans.html"><span class="las la-list-alt px-2"></span> Plans</a>
              <a class="dropdown-item active" href="evidence.html"><span class="las la-money-bill px-2"></span> Payment Evidence</a>
@@ -152,7 +152,7 @@
         </li>
 
         <li class="list-item">
-          <a href="inbox.html" class="d-block p-2">
+          <a href="inbox.html" class="d-block p-2 active">
            <div class="d-inline list-icon">
               <span class="la la-envelope-o"></span>
            </div>
@@ -188,61 +188,52 @@
 
     </aside>
 
+    <!-- <div class="dropdown open">
+      <a class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+               Dropdown Anchor
+            </a>
+
+    </div> -->
+
     <main class="main-content">
 
       <div class="container dash-container mt-5 pt-4">
-        <div class="container dash-container">
+
+         <div class="container dash-container">
+
          <div class="dash-title">
-         <h3 class="text-rubik">Edit Product</h3>
-         <h6 class="text-oxygen dash-bread font-500"><a href="#">Dashboard</a>  <span class="las la-arrow-right text-red"></span> <a href="#">Products</a> <span class="las la-arrow-right"></span> Edit</h6>
+         <h3 class="text-rubik">Messages</h3>
+         <h6 class="text-oxygen dash-bread font-500"><a href="#">Dashboard</a> <span class="las la-arrow-right"></span> Messages</h6>
         </div>
 
         <div class="dash-body mt-4">
-           <div class="card table-card p-3 mb-2">
-            <form action="" method="post">
 
-              <div class="form-group dash-group mb-2">
-                <label for="product_name" class="form-label dash-label">Product Name</label>
-                <input type="text" name="product_name" id="product_name" class="form-control dash-control" placeholder="Product Name">
-              </div>
-
-              <div class="form-group dash-group mb-2">
-                <label for="image" class="form-label dash-label">Image</label>
-                <input type="file" name="image" id="image" class="form-control dash-control">
-              </div>
-
-              <div class="form-group dash-group mb-2">
-                <label for="images" class="form-label dash-label">Images</label>
-                <input type="file" name="images" id="images" class="form-control dash-control" multiple>
-              </div>
-
-              <div class="form-group dash-group mb-3">
-                <label for="product_price" class="form-label dash-label">Product Price</label>
-                <input type="text" name="product_price" id="product_price" class="form-control dash-control" placeholder="Product Price">
-              </div>
-
-              <div class="form-group dash-group mb-2">
-                <button type="submit" class="btn btn-submit px-3">Save</button>
-              </div>
-
-            </form>
-
+            <h5>Welcome you to </h5>
+            <div class="row">
+            <div class="col">
+            <h6><span class="text-red">From : </span> Admin</h6>
+            </div>
+            <div class="col text-end">
+            <h6>12/10/2022</h6>
            </div>
+            </div>
+            <p>Hello we welcome you to this place</p>
         </div>
-          
-        </div>
+
+      </div>
 
       </div>
 
     </main>
 
+    
     <br><br><br>
     <footer class="footer">
-        <div class="container dash-container position-relative">
-          <div class="text-md-end text-center text-grey designby">Designed with <span class="la la-heart-o text-red"></span> by <a href="https://www.instagram.com/digitalroahservices/" target="_blank">Digital Roah Services.</a></div>
-        </div>
-     </footer>
-     
+      <div class="container dash-container position-relative">
+        <div class="text-md-end text-center text-grey designby">Designed with <span class="la la-heart-o text-red"></span> by <a href="https://www.instagram.com/digitalroahservices/" target="_blank">Digital Roah Services.</a></div>
+      </div>
+   </footer>
     
     <!-- Bootstrap JS -->
     <script src="bootstrap/js/popper.min.js"></script>
@@ -259,8 +250,8 @@
         $('#example').DataTable();
       });
     </script>
-        <!-- Izi Toast JS -->
-        <script src="js/iziToast.min.js"></script>
+    <!-- Izi Toast JS -->
+    <script src="js/iziToast.min.js"></script>
     <!-- Preloder JS -->
     <script src="js/modernizr.js"></script>
 <script>
@@ -270,14 +261,5 @@
 	});
 </script>
 
-<script>
-    "use strict";
-        function notify(status,message) {
-           iziToast[status]({
-             message: message,
-             position: "topRight"
-           });
-        }
-</script>
 </body>
 </html>

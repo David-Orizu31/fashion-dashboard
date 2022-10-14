@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	z-index: 99999;
+	background: transparent;
+    transition: 0.6s all ease-in-out;
+}
+
+.loader-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+	z-index: 99999;
+	background: #ffffff;
+    transition: 0.6s all ease-in-out;
+}
+
+.loader-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+	z-index: 99999;
+	background: #ffffff;
+    transition: 0.6s all ease-in-out;
+}
+
+.loader-gif {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    width: 120px;
+    z-index: 99999;
+    transition: 0.6s all ease-in-out;
+}
+
+.text-oxygen {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.text-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+.text-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.text-lobstertwo {
+    font-family: 'Lobster Two', cursive;
+}
+
+.text-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-red {
+    color: rgb(212, 47, 47);
+}
+
+.text-grey {
+    color: rgb(100, 99, 99);
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.navbar {
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.navbar .navbar-brand h3 {
+    margin-bottom: 0px;
+}
+
+.navbar .toggle-btn {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    padding-bottom: 0px !important;
+    padding-top: 18px !important;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .toggle-btn .toggle1 {
+    width: 26px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: rgb(212, 47, 47);
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn .toggle2 {
+    width: 26px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: rgb(212, 47, 47);
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn .toggle3 {
+    width: 26px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: rgb(212, 47, 47);
+    transition: 0.3s all ease-in-out;
+}
+
+
+.navbar .toggle-btn.opened .toggle1 {
+    width: 26px;
+    height: 3px;
+    transform: rotate(40deg);
+    background: rgb(212, 47, 47);
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn.opened .toggle2 {
+    width: 0px;
+    height: 0px;
+    margin-bottom: 0px;
+    display: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn.opened .toggle3 {
+    width: 26px;
+    height: 3px;
+    margin-top: -8px;
+    margin-bottom: 5px;
+    transform: rotate(-40deg);
+    background: rgb(212, 47, 47);
+    transition: 0.3s all ease-in-out;
+}
+
+.btn-login {
+    color: white !important;
+    background: rgb(212, 47, 47) !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    border-radius: 0px !important;
+    font-size: 15px !important;
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 400 !important;
+    margin-right: 20px;
+}
+
+.btn-register {
+    color: rgb(212, 47, 47) !important;
+    background: white !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    border-radius: 0px !important;
+    font-size: 15px !important;
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.btn-search {
+    border: none !important;
+    background: transparent !important;
+}
+
+.banner-area {
+    background: url(../img/fashion-model-2.jpg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+    position: relative;
+}
+
+.btn-show-hide {
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 0px !important;
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.btn-show-hide:hover {
+    color: rgb(212, 47, 47) !important;
+    background: white !important;
+}
+
+.company-phone-overlay {
+    position: relative;
+}
+
+.banner-area .company-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+    max-width: 100%;
+    min-width: 220px;
+}
+
+.banner-area .company-overlay .company-area {
+    /* position: relative; */
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.banner-area .company-overlay .company-area::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+  }
+  
+  /* Track */
+  .banner-area .company-overlay .company-area::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  .banner-area .company-overlay .company-area::-webkit-scrollbar-thumb {
+    background: rgb(71, 71, 71);
+  }
+
+.banner-area .company-overlay .company-list {
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+.banner-area .company-overlay .company-list li {
+    color: white;
+    line-height: 1.8em;
+}
+
+.banner-area .company-overlay .company-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner-area .company-overlay .company-list li a:hover {
+  color: rgb(212, 47, 47);
+}
+
+.banner-area .company-overlay .company-list li .list-text {
+    margin-left: 15px;
+}
+
+.banner-area .overlay-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(131, 14, 14, 0.589),rgba(112, 10, 10, 0.582));
+}
+
+.banner-area .overlay-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6));
+}
+
+
+.banner-content {
+    padding: 30px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.banner-content p {
+   font-size: 18px;
+   margin-top: 20px;
+}
+
+.btn-start {
+    color:  rgb(212, 47, 47) !important;
+    background: white !important;
+    border-radius: 0px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border: 1px solid white !important;
+    font-weight: bold !important;
+}
+
+.btn-start:hover {
+    color: white !important;
+    background: transparent !important;
+    border: 1px solid white !important;
+}
+
+.responsive .slider-arrow {
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background: white;
+    display: none !important;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .responsive:hover .slider-arrow {
+    display: block !important;
+  }
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .responsive .slider-arrow.next {
+    right: 0;
+  }
+
+  .img-slider {
+    width: 90% !important;
+    height: 220px;
+  }
+
+  .slider-item a {
+    text-decoration: none;
+  }
+
+  .content {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .content:hover .overlay{
+    opacity: 1;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .content-details .call-icon {
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    background: rgb(212, 47, 47);
+    border-radius: 5px;
+  }
+
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
+  .product-name {
+    font-size: 15px;
+  }
+
+  .company-name {
+    font-size: 15px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .btn-view-more {
+    color: rgb(212, 47, 47) !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    background: white !important;
+    border-radius: 0px !important;
+    font-size: 18px !important;
+    font-family: 'Rubik', sans-serif !important;
+    padding: 12px 30px !important;
+  }
+
+  .btn-view-more:hover {
+    color: white !important;
+    background: rgb(212, 47, 47) !important;
+  }
+
+  .mobile-nav {
+    background: rgb(156, 39, 39);
+  }
+
+  .mobile-nav .nav-content {
+      color: white;
+      border-right: 1px solid white;
+  }
+
+  .mobile-nav .nav-content select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+  }
+
+  .mobile-nav .nav-content select:focus {
+    box-shadow: none;
+  }
+
+  .mobile-nav .nav-content select option {
+    color: rgb(71, 71, 71);
+  }
+
+  .search-label {
+    border-radius: 0px !important;
+  }
+
+  .search-control {
+    border-radius: 0px !important;
+  }
+
+  .search-control:focus {
+     box-shadow: none !important;
+     border-top: 1px solid #ced4da !important;
+     border-bottom: 1px solid #ced4da !important;
+     border-right: 1px solid #ced4da !important;
+  }
+
+  .card-cover {
+    box-shadow: 0 3px 12px rgba(182, 8, 8, 0.267);
+  }
+
+  .category-card {
+    border-radius: 0px !important;
+    border: none !important;
+    transition: 0.7s all ease-in-out;
+    cursor: pointer;
+    background-size: 100%;
+  }
+
+  .category-card:hover {
+    background: linear-gradient(rgba(182, 8, 8, 0.459), rgba(182, 8, 8, 0.493)), url(../img/cloth-bg.jpeg) no-repeat center;
+    background-size: 110%;
+  }
+
+  .category-card:hover .cat-icon {
+    color: white;
+  }
+
+  .category-card:hover .cat-text {
+    color: white;
+  }
+
+  .category-card:hover .btn-cat {
+    background: transparent !important;
+    border: 1px solid white !important;
+  }
+
+  .category-card .cat-icon {
+    color: rgb(212, 47, 47);
+    transition: 0.7s all ease-in-out;
+  }
+
+  .category-card .cat-text {
+    color: rgb(71, 71, 71);
+    transition: 0.7s all ease-in-out;
+  }
+
+  .btn {
+    font-family: 'Rubik', sans-serif !important;
+  }
+
+  .btn-cat {
+    color: white !important;
+    background: rgb(212, 47, 47) !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    border-radius: 0px !important;
+    transition: 0.7s all ease-in-out;
+  }
+
+  .btn-cat span {
+    transition: 0.7s all ease-in-out;
+  }
+
+  .btn-cat:hover span {
+    margin-left: 5px;
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+  .laundry-textarea {
+    background: rgba(112, 10, 10, 0.582);
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-see-prod {
+    color: rgba(112, 10, 10, 0.582) !important;
+    background: white !important;
+    border: 1px solid white !important;
+    border-radius: 20px !important;
+    font-weight: 500 !important;
+    transition: 0.7s all ease-in-out !important;
+  }
+
+  .btn-see-prod:hover {
+    color: white !important;
+    background: transparent !important;
+  }
+
+  .contact-modal-title {
+    color: rgb(212, 47, 47) !important;
+  }
+
+  .contact-group .contact-label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .contact-group .contact-control {
+    border-radius: 0px !important;
+    font-size: 15px;
+  }
+
+  .contact-group .contact-control:focus {
+    border-color: rgb(212, 47, 47) !important;
+    box-shadow: none !important;
+  }
+
+  .btn-submit {
+    color: white !important;
+    background: rgb(212, 47, 47) !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    border-radius: 0px !important;
+  }
+
+  .btn-submit:hover {
+    background: transparent !important;
+    color: rgb(212, 47, 47) !important;
+  }
+
+  .steps-area {
+    background: rgb(212, 47, 47);
+    color: white;
+    box-shadow: 0 3px 12px rgba(182, 8, 8, 0.267);
+    border-radius: 7px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    height: 210px;
+  }
+
+  .steps-area:hover {
+    color: rgb(212, 47, 47);
+    background: white;
+  }
+
+  .register-now {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../img/nage-bg.jpg) no-repeat center fixed;
+    min-height: 250px;
+    background-size: cover;
+  }
+
+  .register-now .reg-header {
+    font-size: 45px;
+  }
+
+  .btn-regnow {
+    color: white !important;
+    background: transparent !important;
+    border: 2px solid white !important;
+    padding: 12px 18px 12px 18px !important;
+    border-radius: 25px !important;
+    transition: 0.5s all ease-in-out !important;
+  }
+
+  .btn-regnow:hover {
+    background: white !important;
+    color: rgb(212, 47, 47) !important;
+  }
+
+  .footer-area .footer-top {
+    background: rgb(245, 223, 223);
+  }
+
+  .news-control {
+    padding: 12px 15px 12px 15px !important;
+    border-radius: 27px 0px 0px 27px !important;
+  }
+
+  .news-control:focus {
+    box-shadow: none !important;
+    border-right: transparent !important;
+    border-color: rgb(212, 47, 47) !important;
+    background: transparent !important;
+    color: rgb(71, 71, 71) !important;
+  }
+
+  .btn-news {
+    color: white !important;
+    background: rgb(212, 47, 47) !important;
+    border: 1px solid rgb(212, 47, 47) !important;
+    border-radius: 27px !important;
+    margin-left: -20px !important;
+  }
+
+  .footer-main {
+    background: rgb(71, 71, 71);
+  }
+
+  .foot-text {
+    font-size: 14px;
+  }
+
+  .foot-list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+  }
+
+  .foot-list li {
+    line-height: 1.8em;
+  }
+
+  .foot-list li a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .foot-list li a:hover {
+    color: white;
+  }
+
+  .footer-bottom {
+    background: rgb(24, 24, 24);
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+
+  .copyright .digi-link {
+    color: rgb(212, 47, 47) !important;
+    text-decoration: none;
+  }
+
+  .foot-social {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .foot-social:hover {
+    color: rgb(212, 47, 47);
+  }
+
+  .foot-social .lab:hover {
+    transform: rotateZ(360deg);
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(212, 47, 47);
+  color: white;
+  cursor: pointer;
+  padding: 10px 18px 10px 18px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#myBtn:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.product-bread h6 {
+  font-size: 13px;
+}
+
+.product-bread h6 a {
+  text-decoration: none;
+  color: rgb(212, 47, 47);
+}
+
+.product-bread h6 a:hover {
+  color: rgb(100, 99, 99);
+}
+
+.prod-info {
+  font-size: 14px;
+}
+
+.prod-info a {
+  text-decoration: none;
+  color: rgb(212, 47, 47) !important;
+}
+
+.product-desc {
+  font-size: 15px;
+}
+
+.contact-card {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.contact-card {
+  background: rgb(245, 232, 232) !important;
+} 

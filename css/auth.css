@@ -8,7 +8,6 @@ html {
 body {
     max-width: 100%;
     overflow-x: hidden;
-    margin-bottom: 40px;
     background: linear-gradient(rgba(180, 71, 71, 0.795),rgba(151, 48, 48, 0.781)), url(../img/boutique-g3b00dc299_1920.jpg) no-repeat center fixed;
     font-family: 'Roboto', sans-serif !important;
 }

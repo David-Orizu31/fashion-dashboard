@@ -147,3 +147,9 @@ $('.side-nav').mouseout(function() {
 });
 
 }
+
+$('.list-item.dropdown .list-drop').each(function(key, value) {
+  $(value).click(function() {
+    $('#'+value.id+' .list-text .drop-icon').toggleClass('la-angle-down la-angle-up');
+  })
+});

@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
     <!-- Izi Toast CSS -->
     <link rel="stylesheet" href="css/iziToast.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 
@@ -89,7 +91,7 @@
 
        <ul class="nav-list mt-3">
           <li class="list-item">
-            <a href="index.html" class="d-block p-2 active">
+            <a href="index.html" class="d-block p-2">
              <div class="d-inline list-icon">
                 <span class="la la-dashboard"></span>
              </div>
@@ -134,20 +136,20 @@
           </li>
 
           <li class="list-item dropdown">
-            <a href="javascript:void(0);" class="d-block p-2 list-drop" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            <a href="javascript:void(0);" class="d-block p-2 list-drop active" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
              <div class="d-inline list-icon">
                 <span class="la la-bell-o"></span>
              </div>
-             <span class="list-text">Subscriptions <span class="float-end las la-angle-down drop-icon"></span></span>
+             <span class="list-text">Subscriptions <span class="float-end las la-angle-up drop-icon"></span></span>
              </a> 
 
-             <div class="dropdown-menu dropdown-content" aria-labelledby="triggerId">
-               <a class="dropdown-item" href="sms.html"><span class="las la-comment-alt px-2"></span> Renew/Buy Sms</a>
-               <a class="dropdown-item" href="plans.html"><span class="las la-list-alt px-2"></span> Plans</a>
-               <a class="dropdown-item" href="evidence.html"><span class="las la-money-bill px-2"></span> Payment Evidence</a>
-            </div>
-
+             <div class="dropdown-menu dropdown-content show" aria-labelledby="triggerId">
+                <a class="dropdown-item active" href="sms.html"><span class="las la-comment-alt px-2"></span> Renew/Buy Sms</a>
+                <a class="dropdown-item" href="plans.html"><span class="las la-list-alt px-2"></span> Plans</a>
+                <a class="dropdown-item" href="evidence.html"><span class="las la-money-bill px-2"></span> Payment Evidence</a>
+             </div>
+ 
 
           </li>
 
@@ -203,41 +205,49 @@
          <div class="container dash-container">
 
          <div class="dash-title">
-         <h3 class="text-rubik">Dashboard</h3>
-         <h6 class="text-oxygen dash-bread font-500"><a href="#">Home</a> <span class="las la-arrow-right"></span> Dashboard</h6>
+         <h3 class="text-rubik">Buy Sms</h3>
+         <h6 class="text-oxygen dash-bread font-500"><a href="#">Dashboard</a> <span class="las la-arrow-right"></span> Buy Sms</h6>
         </div>
 
-        <div class="dash-body mt-4">
-          <!-- <div class="row">
-            <div class="col-md-4 mb-3">
-               <div class="card dash-card text-center text-white px-2 py-3">
-                   <span class="la la-product-hunt la-3x"></span>
-                   <h6 class="text-raleway mt-2">Products</h6>
-                   <h4 class="text-roboto font-600">0</h4>
-               </div>
+        <div class="dash-body mt-3">
+            <p class="text-raleway font-500">Top Up your SMS Space here.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                  <div class="card cat-card text-center wow fadeIn" data-wow-duration="3000">
+                      <a href="javscript:void(0);" class="cat-link p-3">
+                         <h4 class="text-raleway mt-2">₦ 100</h4>
+                         <p class="text-raleway mb-2"><span class="font-500">Sms -</span> 10</p>
+                         <button class="btn btn-select mt-2">Buy SMS</button>
+                      </a>
+                  </div>
+                </div>
+    
+                <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                  <div class="card cat-card text-center wow fadeIn" data-wow-duration="3000">
+                      <a href="javscript:void(0);" class="cat-link p-3">
+                         <h4 class="text-raleway mt-2">₦ 150</h4>
+                         <p class="text-raleway mb-2"><span class="font-500">Sms -</span> 15</p>
+                         <button class="btn btn-select mt-2">Buy SMS</button>
+                      </a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                    <div class="card cat-card text-center wow fadeIn" data-wow-duration="3000">
+                        <a href="javscript:void(0);" class="cat-link p-3">
+                           <h4 class="text-raleway mt-2">₦ 200</h4>
+                           <p class="text-raleway mb-2"><span class="font-500">Sms -</span> 20</p>
+                           <button class="btn btn-select mt-2">Buy SMS</button>
+                        </a>
+                    </div>
+                  </div>
+    
             </div>
 
-            <div class="col-md-4 mb-3">
-               <div class="card dash-card text-center text-white px-2 py-3">
-                  <span class="las la-list-alt la-3x"></span>
-                  <h6 class="text-raleway mt-2">Orders Placed</h6>
-                  <h4 class="text-roboto font-600">0</h4>
-               </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-               <div class="card dash-card text-center text-white px-2 py-3">
-                  <span class="la la-users la-3x"></span>
-                  <h6 class="text-raleway mt-2">Customers</h6>
-                  <h4 class="text-roboto font-600">0</h4>
-               </div>
-            </div>
-
-          </div> -->
-
-          <div class="bg-warning dash-notice px-3 py-2">
-            <p class="text-white"><span class="la la-warning"></span> Note : You need to subscribe to one of our payment plans to access and control your management system. <a href="#un" class="btn btn-sm btn-danger" style="margin-left: 10px;">Subscribe <span class="la la-bell-o"></span></a></p>
-          </div>
+            <!-- <div class="mt-4">
+                <p class="text-oxygen"><b><span class="text-red"><span class="fa fa-warning"></span> Note :</span> You can still buy more SMS while your plan is on going.</b></p>
+            </div> -->
 
         </div>
 
@@ -280,5 +290,22 @@
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
+
+    <!-- WOW JS -->
+    <script src="js/wow.js"></script>
+        <script>
+            wow = new WOW(
+            {
+              boxClass:     'wow',      // default
+              animateClass: 'animated', // default
+              offset:       0,          // default
+              mobile:       true,       // default
+              live:         true        // default
+            }
+            )
+            wow.init();
+             
+    </script>  
+
 </body>
 </html>

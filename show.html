@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagement - Company Name - Category Name - Product Name</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/homestyles.css">
+    <link rel="stylesheet" href="css/homeresponsive.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="line-awesome/css/line-awesome.css">
+    <link rel="stylesheet" href="line-awesome/css/line-awesome.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font Awesome -->
+    <script src="js/font-awesome.js"></script>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+</head>
+<body>
+
+  <div class="loader">
+   <div class="loader-one"></div>
+   <div class="loader-two"></div>
+   <div class="loader-gif">
+    <img src="img/fash-preloader.gif" alt="fash-preloader" class="img img-fluid">
+   </div>
+  </div>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#"><h3 class="text-raleway text-red">Nagement</h3></a>
+            <ul class="navbar-toggler toggle-btn d-md-none"  data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <li class="toggle1"></li>
+                <li class="toggle2"></li>
+                <li class="toggle3"></li>
+          </ul>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="d-flex my-3 my-md-0">
+                    <a href="#" class="btn btn-login auth-btn">Company Signin</a>
+                    <a href="#" class="btn btn-register auth-btn">Company Signup</a>
+                </div>
+                <div class="d-flex mb-2 mb-md-0">
+                    <!-- Modal trigger button -->
+                    <button type="button" class="btn btn-search mx-md-3" data-bs-toggle="modal" data-bs-target="#searchmodal">
+                      <span class="fas fa-search"></span>
+                    </button>
+                    
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div class="modal fade" id="searchmodal" tabindex="-1" role="dialog" aria-labelledby="searchmodalId" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-red" id="searchmodalId">Search Company</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form action="" method="get">
+                           <!-- <small class="text-raleway font-600">Type and Press Enter to Search</small> -->
+                           <div class="input-group mb-3">
+                            <span class="input-group-text pe-0 bg-white border-end-0 text-black-50 search-label" id="inputGroup-sizing-default"><span class="fas fa-search"></span></span>
+                            <input type="search" name="search" id="search" class="form-control search-control border-start-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Search Here...">
+                          </div>
+
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                </div>
+            </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="product-bread mt-5">
+            <h6><a href=""><span class="las la-home"></span> Home</a> <span class="la la-long-arrow-right"></span> <a href="">Company</a> <span class="la la-long-arrow-right"></span> <a href=""> Category</a> <span class="la la-long-arrow-right"></span> Product</h6>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-8">
+
+            <div class="product-area mt-3">
+
+                <div class="row">
+                  <div class="col-md-4">
+                  <img src="img/cloth-bg.jpeg" alt="cloth-bg" class="img img-fluid">
+                 </div>
+                 <div class="col-md-8">
+                   <div class="product-details mt-3 mt-md-0">
+                    <p class="text-poppins mb-2"><span class="text-rubik font-500">Product :</span> <span class="font-300">Product Name</span></p>
+                    <p class="text-poppins mb-2"><span class="text-rubik font-500">Company :</span> <span class="font-300">Company Name</span></p>
+                    <p class="text-poppins mb-2"><span class="text-rubik font-500">Category :</span> <span class="font-300">Category Name</span></p>
+                   </div>
+                   <p class="prod-info mt-3 text-oxygen"><b class="text-red">Note :</b> Fill the <a class="font-500" href="#form-area">form</a> on this page or call <a class="font-500" href="#">+234-353-474764</a> to request for this product.</p>
+                 </div>
+                </div>
+
+                <div class="product-description mt-3">
+                    <h5 class="text-red">Detailed Description</h5>
+                    <div class="product-desc text-raleway">
+                        This product has soo this two things for my heads 
+                    </div>
+                </div>
+            
+            </div>
+
+          </div>
+
+          <div class="col-lg-4" id="form-area">
+
+             <div class="card contact-card p-3 mt-4 mt-lg-0">
+                 <h3 class="text-center text-raleway">Request Product</h3>
+
+                 <form action="" method="post">
+                   <div class="form-group contact-group mb-2">
+                    <label for="name" class="form-label contact-label mb-1">Name</label>
+                    <input type="text" name="name" id="name" class="form-control contact-control">
+                   </div>
+
+                   <div class="form-group contact-group mb-2">
+                    <label for="phone" class="form-label contact-label mb-1">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" class="form-control contact-control">
+                   </div>
+
+                   <div class="form-group contact-group mb-2">
+                    <label for="address" class="form-label contact-label mb-1">Address</label>
+                    <input type="text" name="address" id="address" class="form-control contact-control">
+                   </div>
+
+                   <div class="form-group contact-group mb-2">
+                    <label for="msg" class="form-label contact-label mb-1">Message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="4" class="form-control contact-control"></textarea>
+                   </div>
+
+                   <div class="form-group contact-group mt-3 mb-2">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-submit">Send <span class="fa fa-paper-plane-o"></span></button>
+                    </div>
+                   </div>
+
+                 </form>
+
+             </div>
+
+          </div>
+
+        </div>
+
+        <section class="arrivals-area mt-5">
+            <h1 class="text-center text-lobstertwo wow fadeInDown" data-wow-duration="1000">Related Products</h1>
+        
+            <div class="my-3">
+            <div class="responsive">
+               <div class="slider-item" align="center">
+                <a href="javascript:void(0);">
+                  <div class="content">
+                  <img src="img/fashion-cat.jpg" alt="fashion-cat" class="img-slider">
+                  <div class="overlay"></div>
+                  <div class="content-details fadeIn-bottom">
+                    <span class="fas fa-phone call-icon"></span>
+                  </div>
+                </div>
+                  <span class="product-name d-block text-raleway text-grey font-500 mt-1">Product Name</span>
+                  <span class="company-name d-block text-red font-500">Company Name</span>
+                  <h5 class="price text-rubik text-dark mt-1">₦ 5,000.00</h5>
+                </a>
+               </div>
+        
+               <div class="slider-item" align="center">
+                <a href="javascript:void(0);">
+                  <div class="content">
+                <img src="img/jewelry-cat.jpg" alt="fashion-cat" class="img-slider">
+                <div class="overlay"></div>
+                <div class="content-details fadeIn-bottom">
+                  <span class="fas fa-phone call-icon"></span>
+                </div>
+              </div>
+                <span class="product-name d-block text-raleway text-grey font-500 mt-1">Product Name</span>
+                <span class="company-name d-block text-red font-500">Company Name</span>
+                <h5 class="price text-rubik text-dark mt-1">₦ 5,000.00</h5>
+               </a>
+             </div>
+        
+             <div class="slider-item" align="center">
+              <a href="javascript:void(0);">
+                <div class="content">
+                <img src="img/female-top.jpg" alt="fashion-cat" class="img-slider">
+                <div class="overlay"></div>
+                <div class="content-details fadeIn-bottom">
+                  <span class="fas fa-phone call-icon"></span>
+                </div>
+              </div>
+                <span class="product-name d-block text-raleway text-grey font-500 mt-1">Product Name</span>
+                <span class="company-name d-block text-red font-500">Company Name</span>
+                <h5 class="price text-rubik text-dark mt-1">₦ 5,000.00</h5>
+               </a>
+             </div>
+        
+             <div class="slider-item" align="center">
+              <a href="javascript:void(0);">
+                <div class="content">
+                <img src="img/sale-catty.jpg" alt="fashion-cat" class="img-slider">
+                <div class="overlay"></div>
+                <div class="content-details fadeIn-bottom">
+                  <span class="fas fa-phone call-icon"></span>
+                </div>
+              </div>
+                <span class="product-name d-block text-raleway text-grey font-500 mt-1">Product Name</span>
+                <span class="company-name d-block text-red font-500">Company Name</span>
+                <h5 class="price text-rubik text-dark mt-1">₦ 5,000.00</h5>
+               </a>
+             </div>
+        
+             <div class="slider-item" align="center">
+              <a href="javascript:void(0);">
+                <div class="content">
+                <img src="img/womens-melage-trouser.jpg" alt="fashion-cat" class="img-slider">
+                <div class="overlay"></div>
+                <div class="content-details fadeIn-bottom">
+                  <span class="fas fa-phone call-icon"></span>
+                </div>
+              </div>
+                <span class="product-name d-block text-raleway text-grey font-500 mt-1">Product Name</span>
+                <span class="company-name d-block text-red font-500">Company Name</span>
+                <h5 class="price text-rubik text-dark mt-1">₦ 5,000.00</h5>
+               </a>
+             </div>
+            </div>
+        
+            <div class="text-center my-4">
+              <a href="#un" class="btn btn-view-more text-uppercase">View More <span class="las la-angle-double-right"></span></a>
+            </div>
+        
+        </div>
+        </section>
+<br>
+    </div>
+
+    <section class="register-now mt-4 wow fadeIn" data-wow-duration="2000">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-center pt-md-5 pt-4">
+              <h1 class="text-white text-lobstertwo reg-header">Register with us Today.</h1>
+              <p class="text-white text-raleway">Get to manage and control your business online with Nagement.</p>
+              <a href="#un" class="btn btn-regnow text-uppercase">Register Now</a>
+            </div>
+          </div>
+        </div>
+     </section>
+    
+    <footer class="footer-area mt-5">
+    
+       <div class="footer-top py-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <h4 class="text-center text-raleway">Subscribe for Newsletter</h4>
+            <form action="" method="get">
+              <div class="input-group">
+                <input type="email" name="email" class="form-control news-control" placeholder="Enter your Email" aria-label="Enter your Email" aria-describedby="button-addon2">
+                <button class="btn btn-news px-4" type="submit" id="button-addon2">Subscribe</button>
+              </div>
+            </form>
+        </div>
+        </div>
+        </div>
+       </div>
+    
+    
+       <div class="footer-main py-4">
+           <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                 <h5 class="text-uppercase text-rubik text-white">About Us</h5>
+                 <p class="text-poppins font-300 text-white-50 foot-text">Nagement offers your company a platform where you can display your products and services for sale. This can be achieved by undergoing registeration via this website. Our aim is to ease the trading of products and services online thus making the marketing of your products faster and easier.</p>
+              </div>
+    
+              <div class="col-lg-4">
+                <h5 class="text-uppercase text-rubik text-white">Browse Categories</h5>
+                <ul class="foot-list text-poppins font-300">
+                  <li><a href="#un">Fashion</a></li>
+                  <li><a href="#un">Laundry</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-4">
+                <h5 class="text-uppercase text-rubik text-white">Contact</h5>
+                <ul class="foot-list text-poppins font-300">
+                  <li><a href="#un"><span class="la la-map-marker-alt me-1"></span> Address : Behind Honda Villa Utan Jos</a></li>
+                  <li><a href="#un"><span class="la la-phone me-1"></span> Tel : +234 816 735 4743</a></li>
+                  <li><a href="#un"><span class="la la-envelope-o me-1"></span> Email : support@nagement.com</a></li>
+                </ul>
+              </div>
+    
+            </div>
+           </div>
+       </div>
+    
+       <div class="footer-bottom py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-center text-md-start order-md-first order-last">
+                <p class="copyright text-white text-poppins font-300 mb-0"><span class="d-block d-md-inline my-1 my-md-0">Copyright &copy; 2022.</span> Designed by <a href="#un" class="digi-link">Digital Roah Services.</a></p>
+              </div>
+              <div class="col-md-4 text-center text-md-end">
+                <a href="#un" class="foot-social me-2"><span class="lab la-facebook"></span></a>
+                <a href="#un" class="foot-social me-2"><span class="lab la-instagram"></span></a>
+                <a href="#un" class="foot-social me-2"><span class="lab la-twitter"></span></a>
+              </div>
+            </div>
+          </div>
+       </div>
+    
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="fas fa-angle-up"></span></button>
+        
+        
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Slick Js -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="slick-js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+        <script>
+            $('.responsive').slick({
+      speed: 1000,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay:true,
+      autoplaySpeed:2000,
+      arrows: true,
+      nextArrow: '<button class="slider-arrow next inverted"><i class="las la-angle-right text-red"></i></button>',
+      prevArrow: '<button class="slider-arrow prev inverted"><i class="las la-angle-left text-red"></i></button>',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            centerMode: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+        </script>
+    
+        <!-- WOW JS -->
+        <script src="js/wow.js"></script>
+            <script>
+                wow = new WOW(
+                {
+                  boxClass:     'wow',      // default
+                  animateClass: 'animated', // default
+                  offset:       0,          // default
+                  mobile:       true,       // default
+                  live:         true        // default
+                }
+                )
+                wow.init();
+                 
+            </script>   
+        <!-- Script -->
+        <script src="js/homescript.js"></script>
+            <!-- Preloder JS -->
+        <script src="js/modernizr.js"></script>
+    <script>
+        $(window).load(function() {
+            // Animate loader off screen
+        $('.loader-gif').fadeOut('fast');
+            $('.loader-one').css('width', 0);
+        $('.loader-two').css('width', 0);
+        setTimeout(() => {
+          $('.loader').fadeOut();
+        }, 600);
+        });
+    </script>
+    
+    </body>
+    </html>

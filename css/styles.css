@@ -80,6 +80,41 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 700;
 }
 
+.manage-header {
+    color: #000000;
+    text-shadow: 0 0 2px rgb(212, 47, 47);
+}
+
+.cat-card {
+    transition: 0.5s all ease-in-out;
+    border: none !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cat-card .cat-link {
+    color: white;
+    text-decoration: none;
+    background: rgb(189, 57, 57);
+    transition: 0.5s all ease-in-out;
+    border-radius: 5px;
+}
+
+.cat-card .cat-link:hover {
+    color: rgb(189, 57, 57);
+    background: white;
+}
+
+.btn-select {
+    color: white !important;
+    background: transparent !important;
+    border: 1px solid white !important;
+  }
+
+  .cat-card .cat-link:hover .btn-select {
+    color: rgb(189, 57, 57) !important;
+    border: 1px solid rgb(189, 57, 57) !important;
+  }
+
 .stat-back {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     top: 0;
@@ -111,6 +146,21 @@ h1,h2,h3,h4,h5,h6,p {
     z-index: 9999;
     transition: 0.5s all ease-in-out;
 }
+
+.side-nav::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+  }
+  
+  /* Track */
+  .side-nav::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .side-nav::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+  }
 
 .side-nav .logo-area {
     min-height: 55px;
@@ -182,10 +232,35 @@ h1,h2,h3,h4,h5,h6,p {
     color: white;
 }
 
-.side-nav .nav-list .list-item.active a {
+.side-nav .nav-list .list-item a.active {
     background: rgb(189, 57, 57);
     color: white;
 }
+
+.drop-icon {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+
+.list-item.dropdown .dropdown-content {
+    position: relative !important;
+    transform: none !important;
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.list-item.dropdown .dropdown-content a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
 
 .main-content {
     padding-left: 250px;
@@ -425,4 +500,17 @@ h1,h2,h3,h4,h5,h6,p {
     max-width: 100%;
     width: 100%;
     transition: 0.5s all ease-in-out;
+}
+
+.dash-notice {
+    border-radius: 5px;
+}
+
+.dash-notice p {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.msg-table tbody tr {
+    cursor: pointer;
 }

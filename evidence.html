@@ -89,7 +89,7 @@
 
        <ul class="nav-list mt-3">
           <li class="list-item">
-            <a href="index.html" class="d-block p-2 active">
+            <a href="index.html" class="d-block p-2">
              <div class="d-inline list-icon">
                 <span class="la la-dashboard"></span>
              </div>
@@ -134,18 +134,18 @@
           </li>
 
           <li class="list-item dropdown">
-            <a href="javascript:void(0);" class="d-block p-2 list-drop" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            <a href="javascript:void(0);" class="d-block p-2 list-drop active" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
              <div class="d-inline list-icon">
                 <span class="la la-bell-o"></span>
              </div>
-             <span class="list-text">Subscriptions <span class="float-end las la-angle-down drop-icon"></span></span>
+             <span class="list-text">Subscriptions <span class="float-end las la-angle-up drop-icon"></span></span>
              </a> 
 
-             <div class="dropdown-menu dropdown-content" aria-labelledby="triggerId">
+             <div class="dropdown-menu dropdown-content show" aria-labelledby="triggerId">
                <a class="dropdown-item" href="sms.html"><span class="las la-comment-alt px-2"></span> Renew/Buy Sms</a>
                <a class="dropdown-item" href="plans.html"><span class="las la-list-alt px-2"></span> Plans</a>
-               <a class="dropdown-item" href="evidence.html"><span class="las la-money-bill px-2"></span> Payment Evidence</a>
+               <a class="dropdown-item active" href="evidence.html"><span class="las la-money-bill px-2"></span> Payment Evidence</a>
             </div>
 
 
@@ -203,41 +203,45 @@
          <div class="container dash-container">
 
          <div class="dash-title">
-         <h3 class="text-rubik">Dashboard</h3>
-         <h6 class="text-oxygen dash-bread font-500"><a href="#">Home</a> <span class="las la-arrow-right"></span> Dashboard</h6>
+         <h3 class="text-rubik">Payment Evidence</h3>
+         <h6 class="text-oxygen dash-bread font-500"><a href="#">Dashboard</a> <span class="las la-arrow-right"></span> Payment Evidence</h6>
         </div>
 
-        <div class="dash-body mt-4">
-          <!-- <div class="row">
-            <div class="col-md-4 mb-3">
-               <div class="card dash-card text-center text-white px-2 py-3">
-                   <span class="la la-product-hunt la-3x"></span>
-                   <h6 class="text-raleway mt-2">Products</h6>
-                   <h4 class="text-roboto font-600">0</h4>
+        <div class="dash-body mt-3">
+ 
+            <p class="text-raleway font-500">Send us an evidence of payment here so that we could confirm your payment.</p>
+
+            <div class="card table-card p-3 mb-2 mt-3">
+                <form action="" method="post" enctype="multipart/form-data">
+    
+                  <div class="form-group dash-group mb-2">
+                    <label for="transactionid" class="form-label dash-label">Transaction Id/Ref</label>
+                    <input type="text" name="transactionid" id="transactionid" class="form-control dash-control" placeholder="Enter Transaction Id/Ref">
+                  </div>
+
+    
+                  <div class="form-group dash-group mb-3">
+                    <label for="sender_name" class="form-label dash-label">Sender Name</label>
+                    <input type="text" name="sender_name" id="sender_name" class="form-control dash-control" placeholder="Enter Sender Name">
+                  </div>
+
+                  <div class="form-group dash-group mb-3">
+                    <label for="sender_amount" class="form-label dash-label">Sender Amount</label>
+                    <input type="text" name="sender_amount" id="sender_amount" class="form-control dash-control" placeholder="Enter Sender Amount">
+                  </div>
+
+                  <div class="form-group dash-group mb-3">
+                    <label for="receipt" class="form-label dash-label">Upload Receipt</label>
+                    <input type="file" name="receipt" id="receipt" class="form-control dash-control">
+                  </div>
+    
+                  <div class="form-group dash-group mb-2">
+                    <button type="submit" class="btn btn-submit px-3">Pay Now</button>
+                  </div>
+    
+                </form>
+    
                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-               <div class="card dash-card text-center text-white px-2 py-3">
-                  <span class="las la-list-alt la-3x"></span>
-                  <h6 class="text-raleway mt-2">Orders Placed</h6>
-                  <h4 class="text-roboto font-600">0</h4>
-               </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-               <div class="card dash-card text-center text-white px-2 py-3">
-                  <span class="la la-users la-3x"></span>
-                  <h6 class="text-raleway mt-2">Customers</h6>
-                  <h4 class="text-roboto font-600">0</h4>
-               </div>
-            </div>
-
-          </div> -->
-
-          <div class="bg-warning dash-notice px-3 py-2">
-            <p class="text-white"><span class="la la-warning"></span> Note : You need to subscribe to one of our payment plans to access and control your management system. <a href="#un" class="btn btn-sm btn-danger" style="margin-left: 10px;">Subscribe <span class="la la-bell-o"></span></a></p>
-          </div>
 
         </div>
 
